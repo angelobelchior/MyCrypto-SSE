@@ -1,5 +1,7 @@
 ﻿global using System.Text.Json;
 
+await Task.Delay(1000); //Aguarda o Server subir para começar o consumo
+
 using var client = new HttpClient();
 client.Timeout = TimeSpan.FromSeconds(15);
 var url = "https://localhost:7115/cryptos/stream/?filter=*";
@@ -24,7 +26,7 @@ while (true)
     }
     catch(Exception ex)
     {
-        Console.WriteLine(ex);
+        Console.WriteLine(ex.Message);
         Console.WriteLine("[Error] - Waiting...");
         await Task.Delay(TimeSpan.FromSeconds(5));
     }

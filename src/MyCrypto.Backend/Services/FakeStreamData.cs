@@ -38,8 +38,7 @@ public class FakeStreamData : IStreamData
 
         //***
         //Simula a opção de escolher algumas cryptos apenas para receber os dados de atualização
-        if (filter.Equals("*"))
-            return data;
+        if (filter.Equals("*")) return data;
         var symbols = filter.Split(",").Select(s => s.Trim());
         return data.Where(i => symbols.Any(symbol => symbol.Equals(i.Symbol, StringComparison.InvariantCultureIgnoreCase)));
         //***
