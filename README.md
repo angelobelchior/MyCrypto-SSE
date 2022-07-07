@@ -72,3 +72,5 @@ dotnet serve -o -S -p 51234
 # -S roda o site usando https
 # -p indica a porta onde a aplicação vai rodar
 ```
+
+Agradecimentos especiais ao [**Tiago Aguiar**](https://github.com/aguiardev) pela ajuda com a parte de front-end. 💕
