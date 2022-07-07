@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{24053C0E-4DD
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyCrypto.Backend", "src\MyCrypto.Backend\MyCrypto.Backend.csproj", "{B0940F58-A715-4256-B46D-0D4B432284C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyCrypto.Playground", "src\MyCrypto.Playground\MyCrypto.Playground.csproj", "{C10A42D5-9FD6-46A3-9695-BE183AE110E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyCrypto.Playground", "src\MyCrypto.Playground\MyCrypto.Playground.csproj", "{C10A42D5-9FD6-46A3-9695-BE183AE110E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

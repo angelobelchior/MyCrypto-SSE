@@ -10,8 +10,19 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: "ApenasParaTestes",
+                      builder => builder.WithOrigins("http://localhos:51234")
+                                        .AllowAnyMethod()
+                                        .AllowAnyHeader());
+});
+
+builder.Services.Configure<KestrelServerOptions>(o => o.AllowSynchronousIO = true);
+
 builder.Services.AddSingleton<IRepository, FakeRepository>();
 builder.Services.AddSingleton<IStreamData, FakeStreamData>();
+builder.Services.AddCors();
 
 var app = builder.Build();
 
@@ -22,6 +33,13 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors(x => x
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .SetIsOriginAllowed(origin => true)
+                .AllowCredentials());
+
 app.UseAuthorization();
 app.MapControllers();
 app.Run();

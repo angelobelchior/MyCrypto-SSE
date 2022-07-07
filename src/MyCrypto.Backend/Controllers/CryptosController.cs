@@ -30,14 +30,18 @@ public class CryptosController : ControllerBase
         Response.Headers.Add("Content-Type", "text/event-stream");
         Response.Headers.Add("Cache-Control", "no-cache");
         Response.Headers.Add("Connection", "keep-alive");
-        using var writer = new StreamWriter(Response.Body);
+        var writer = new StreamWriter(Response.Body);
         while (!HttpContext.RequestAborted.IsCancellationRequested)
         {
             var items = await _streamData.Consume(filter);           
             var json = JsonSerializer.Serialize(items);
             _logger.LogInformation(json);
-            await writer.WriteLineAsync(json);
+
+            await writer.WriteLineAsync("event: crypto");
+            await writer.WriteLineAsync($"data: {json}");
             await writer.FlushAsync();
         }
+        writer.Close();
+        writer.Dispose();
     }
 }

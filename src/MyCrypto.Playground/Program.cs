@@ -18,7 +18,13 @@ while (true)
             var message = await reader.ReadLineAsync();
             if (string.IsNullOrEmpty(message)) continue;
 
-            var items = JsonSerializer.Deserialize<IEnumerable<Data>>(message);
+            if (!message.StartsWith("data:"))
+            {
+                Console.WriteLine($"Event: {message}");
+                continue;
+            }
+
+            var items = JsonSerializer.Deserialize<IEnumerable<Data>>(message.Replace("data:", string.Empty));
             if (items is null) continue;
 
             PrintItems(items);

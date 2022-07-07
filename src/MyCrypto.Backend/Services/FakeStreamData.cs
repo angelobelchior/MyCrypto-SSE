@@ -27,7 +27,7 @@ public class FakeStreamData : IStreamData
     public async Task<IEnumerable<Data>> Consume(string filter)
     {
         //Simulando um tempo de requisição/processamento 
-        var delay = Random.Shared.Next(10, 101);
+        var delay = Random.Shared.Next(30, 80);
         await Task.Delay(delay);
 
         //Nesse caso, simula-se que apenas algumas criptos sofreram alterações de valores
