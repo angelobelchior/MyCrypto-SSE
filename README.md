@@ -44,11 +44,11 @@ Não sou (e nem pretendo ser) especialista em JS.
 Utilizei a primeira lib que encontrei no Github para esse fim: https://github.com/mpetazzoni/sse.js.
 Funcionou de primeira. Achei bem simples de usar :)
 
-Para rodar o site eu usei o dotnet-serve, que é uma ferramente bem legal para subir um servidor HTTP por linha de comando de forma simples e rápida. É o tipo de ferramente que facilita muito o dia-a-dia.
+Para rodar o site eu usei o dotnet-serve, que é uma ferramenta bem legal para subir um servidor HTTP por linha de comando de forma simples e rápida. É o tipo de coisa que facilita muito o dia-a-dia.
 
 Nesse link https://github.com/natemcmaster/dotnet-serve é possível ter todas as informações para instalação e uso da ferramenta.
 
-Considere apoiar o desenvolvedor dessa ferramenta ❤️
+Considere apoiar o desenvolvedor desse projeto ❤️
 
 Após instalar o dotnet-serve já é possível rodar o projeto. Para isso execute os seguintes comandos: 
 
