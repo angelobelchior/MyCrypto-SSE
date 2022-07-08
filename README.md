@@ -15,9 +15,9 @@ Mais informações em:
 # Sobre o Repositório
 
 ## MyCrypto-SSE
-Exemplo de aplicação que utiliza SSE simulando um consumo em "real time" dos valores de crypto moedas
+Exemplo de aplicação que utiliza SSE simulando um consumo em "real time" dos valores de crypto moedas.
 
-**Reforço aqui que esse projeto serve única e exclusivamente para estudos. Colocar um projeto SSE em produção não é tão trivial, principalmente no que diz respeito a escalabilidade. Produção é vida real, e todos nós sabemos que 'O mundo é diferente da ponte pra cá'...**
+**Reforço aqui que esse projeto serve única e exclusivamente para estudos. Colocar um projeto SSE em produção não é tão trivial, principalmente no que diz respeito a escalabilidade. Produção é vida real, e todos nós sabemos que 'O mundo é diferente da ponte pra cá'...**.
 
 ### MyCrypto.Backend
 
@@ -42,7 +42,7 @@ Exemplo de consumo do Web API usando JS.
 Não sou (e nem pretendo ser) especialista em JS. 
 
 Utilizei a primeira lib que encontrei no Github para esse fim: https://github.com/mpetazzoni/sse.js.
-Funcionou de primeira. Achei bem simples de usar
+Funcionou de primeira. Achei bem simples de usar :)
 
 Para rodar o site eu usei o dotnet-serve, que é uma ferramente bem legal para subir um servidor HTTP por linha de comando de forma simples e rápida. É o tipo de ferramente que facilita muito o dia-a-dia.
 
@@ -50,7 +50,7 @@ Nesse link https://github.com/natemcmaster/dotnet-serve é possível ter todas a
 
 Considere apoiar o desenvolvedor dessa ferramenta ❤️
 
-Após instalar o dotnet-serve já é possível rodar o projeto. Para isso exeute os seguintes comandos: 
+Após instalar o dotnet-serve já é possível rodar o projeto. Para isso execute os seguintes comandos: 
 
 **Para inicar o Backend:**
 ```
